@@ -1,0 +1,137 @@
+/*.....carousel section...*/
+.carousel-sec{
+	
+}
+.carousel-img{
+	width: 100%;
+	height: 650px !important;
+}
+.proChoice{
+	margin-top: 5em;
+}
+.header-proChoice{
+	font-size: 30px;
+	font-weight: 600;
+	color: brown;
+	margin: 15px;
+}
+.proChoice-row{
+	margin-top: 2em;
+	margin-bottom: 5em;
+}
+.proChoice-col{
+	height: 250px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.icon-car{
+	line-height: 100px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width:70px;
+	height: 70px;
+}
+.icon-img{
+	margin-top: 2em;
+	line-height: 100px;
+	margin-bottom: 2em;
+}
+.img-caption{
+	font-size: 25px;
+	font-weight: 300;
+}
+/*second section (our brands)*/
+.brands-row{
+	margin-top: 2em;
+	margin-bottom: 5em;
+}
+.brand-col{
+	height: auto;
+	
+	border-radius: 15px;
+}
+.card-title{
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+.card-img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 1em;
+	border-radius: 15px
+}
+/*....third section (featured products)..*/
+.slide-container {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .feature-row{
+      margin-top: 3em;
+      margin-bottom: 5em;
+  }
+  /*.fourth section first card (why us)..*/
+  .card-row{
+      margin-top: 3em;
+  }
+  .card-col-img{
+      border-radius: 15px;
+      z-index: 2;
+  }
+  .card-col-text{
+      position: relative;
+      text-align: center;
+      
+  }
+  .card-text{
+      margin-top: 2em;
+  }
+  .fifth-sec{
+      margin-top: 5em;
+  }
+  .forth-sec{
+      margin-top: 5em;
+  }
+  .card-img{
+      height: 300px;
+  }
+  .head{
+      margin-bottom: 2em;
+  }
+  /*......quality section....*/
+  .quality-sec{
+      margin-top: 5em;
+      margin-bottom: 5em;
+  }
+  /*....footer.....*/
+  .social-icon{
+          width: 40px;
+          height: 40px;
+          padding: 6px;
+          border-radius: 50%;
+          border: 1px solid gray;
+          
+      }
+  .footer-sec{
+      background-color:white;
+      bottom: 0;
+      
+  }
+  .footer-row{
+      line-height: 10;
+  }
+  .footer-logo{
+      float:left;
+  }
+  .logo-img{
+	
+	margin-top: -.4em;
+}
+/*media query for carousel*/
+@media (max-width: 1025px){
+	.carousel-img{
+		height: auto !important;
+	}
+}
+/*..................................*/
