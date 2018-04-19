@@ -14,6 +14,24 @@
 	margin-right: 2em;
 	margin-top: .5em;
 }
+.navbar-header{
+	height: 7em;
+}
+
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 17px;
+    margin-right: 25px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
 .navStyle{
 	background-color: transparent;
 	border:transparent;
@@ -51,25 +69,22 @@
 	height: 5em;
 	box-shadow: 5px 5px 5px;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+ .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: #ba359396;
 	border-radius: 15px;
 }
-.navbar-toggle{
-	margin-top: 17px!important;
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #b53995b8;
+    border-radius: 15px;
 }
-.navbar-default .btn-link {
-	color: blue;
-	text-decoration: none;
-}
-@media (max-width:767px){
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
-    margin-top: 11px;
-    background-color: antiquewhite;
-	    box-shadow: 5px 5px 5px;
+
+@media (min-width: 768px){
+	#nav-btn{
+		display: none;
 	}
+
 }
 @media  (max-width: 991px){
 	.logoStyle{
@@ -130,11 +145,89 @@
 	}
 
 }
+ /*....footer.....*/
+ .social-icon{
+	width: 40px;
+	height: 40px;
+	padding: 6px;
+	border-radius: 50%;
+	border: 1px solid gray;
+	
+}
+.footer-sec{
+	background-color:white;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+
+}
+.footer-row{
+line-height: 2;
+}
+.footer-logo{
+float:left;
+}
+.logo-img{
+
+margin-top: -.4em;
+}
 @media(max-width: 767px){
+	.navbar-right{
+		text-align: center
+	}
+	
 	.logoStyle{
 		width:135px;
 		margin-left: 2em;
 	
 	}
+	.navStyle .navbar-collapse {
+		margin-right: 1em;
+    	margin-top: 0em;
+    	margin-left: 1em;
+    	background-color: #000000e3;
+    	border-radius: 15px;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #e7e7e7;
+		margin-top: 71px;
+		background-color: #000000e3;
+		-webkit-box-shadow: 5px 5px 5px;
+		box-shadow: 5px 5px 5px;
+		
+		
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: aliceblue;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 24px;
+	}
+	.navBtnStyle .icon-bar {
+		display: block;
+		width: 35px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #020202;
+		margin-top: 5px;
+		margin-bottom: 4px;
+	}
+	.navBtnStyle{
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 2.4em;
+		margin-right: 3em;
+		margin-bottom: 8px;
+		background-color: transparent;
+		background-image: none;
+		border: 2px solid #ddd;
+		border-radius: 8px;
+	}
+	
+	
 }
 

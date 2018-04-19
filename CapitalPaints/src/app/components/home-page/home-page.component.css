@@ -102,30 +102,7 @@
       margin-top: 5em;
       margin-bottom: 5em;
   }
-  /*....footer.....*/
-  .social-icon{
-          width: 40px;
-          height: 40px;
-          padding: 6px;
-          border-radius: 50%;
-          border: 1px solid gray;
-          
-      }
-  .footer-sec{
-      background-color:white;
-      bottom: 0;
-      
-  }
-  .footer-row{
-      line-height: 2;
-  }
-  .footer-logo{
-      float:left;
-  }
-  .logo-img{
-	
-	margin-top: -.4em;
-}
+ 
 /*media query for carousel*/
 @media (max-width: 1025px){
 	.carousel-img{

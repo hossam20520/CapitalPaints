@@ -9,6 +9,7 @@ import {TranslateService} from '@ngx-translate/core';
 import { CollapseModule } from 'ngx-bootstrap';
 import { CarouselModule } from 'ngx-bootstrap';
 import {RouterModule} from '@angular/router';
+import { ProductsComponent } from './components/products/products.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -16,7 +17,8 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ export function createTranslateLoader(http: HttpClient) {
   }),
   RouterModule.forRoot([
     {path:'homepage', component:HomePageComponent},
+    {path:'products',component:ProductsComponent},
     {path:"",redirectTo:'homepage',pathMatch:'full'}
     
   ])
