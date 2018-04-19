@@ -2,12 +2,48 @@
 .logo-img{
 	
 	margin-top: -.4em;
+	width:100px;
+	 height:50px;
 	
-	
+}
+.flag{
+	width: 50px;
+	height: 50px;
 }
 .navbar-right{
 	margin-right: 2em;
 	margin-top: .5em;
+}
+.navStyle{
+	background-color: transparent;
+	border:transparent;
+}
+.logoStyle{
+	
+	height:80px ;
+}
+.navlinkStyle{
+	line-height: 74px;
+	font-size: 19px;
+	font-weight: 600;
+	color: aliceblue;
+}
+.nav-link{
+	line-height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #777 ;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 24px;
+}
+.navStyle .navbar-nav>li>a {
+	color:aliceblue ;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 74px;
 }
 .navbar-default {
     background-color: #ffffff;
@@ -35,3 +71,70 @@
 	    box-shadow: 5px 5px 5px;
 	}
 }
+@media  (max-width: 991px){
+	.logoStyle{
+		width:150px;
+		margin-left: -5em;
+	}
+	.navbar-right {
+		margin-right: -5em;
+		
+	}
+}
+@media(max-width: 964px){
+	.logoStyle{
+		width:135px;
+		margin-left: -3em;
+	}
+	.navbar-right {
+		margin-right: -3em;
+	}
+	.navStyle .navbar-nav>li>a {
+		
+		font-size: 16px;
+		
+	}
+
+}
+@media(max-width: 880px){
+	.logoStyle{
+		width:125px;
+		margin-left: -1em;
+	}
+	.navbar-right {
+		margin-right: -2em;
+	}
+	.navStyle .navbar-nav>li>a {
+		
+		font-size: 14px;
+		line-height: 64px;
+	}
+	.flag{
+		width: 45px;
+		height: 45px;
+	}
+
+}
+@media(max-width: 810px){
+	.logoStyle{
+		width:125px;
+		margin-left: 0em;
+	}
+	.navbar-right {
+		margin-right: 0em;
+	}
+	
+	.flag{
+		width: 35px;
+		height: 45px;
+	}
+
+}
+@media(max-width: 767px){
+	.logoStyle{
+		width:135px;
+		margin-left: 2em;
+	
+	}
+}
+

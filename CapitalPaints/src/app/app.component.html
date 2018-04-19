@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" id="nav-style">
+<nav class="navbar navStyle navbar-fixed-top" id="nav-style">
   <div class="container">
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
@@ -9,31 +9,31 @@
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand" href="#">
-      <img alt="Brand" class="logo-img" src="../assets/images/Capital Logo3.jpg" width="100" height="50">
+      <img alt="Brand" id="logo-nav" class="img-responsive logoStyle" src="../assets/images/Capital Logo3.jpg" >
     </a>
 </div>
 <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right" *ngIf="toEn && !toAr">
-          <li class="active"><a href="#" translate>Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="#" translate>Products</a></li>
-          <li><a href="#" translate>News</a></li>
-          <li><a href="#" translate>About</a></li>
-          <li><a href="#" translate>Contact</a></li>
+          <li class="active"><a href="#" class=" navLink"  translate>Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#" class="navLink"  translate>Products</a></li>
+          <li><a href="#" class=" navLink"  translate>News</a></li>
+          <li><a href="#" class=" navLink"  translate>About</a></li>
+          <li><a href="#" class=" navLink"  translate>Contact</a></li>
           <li>
-            <button class="btn btn-link" (click)="switchLanguageEn('en')">en</button>
-            <button class="btn btn-link" (click)="switchLanguageAr('ar')">ar</button>
+            <button class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="img-responsive flag"></button>
+            <button class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="img-responsive flag"></button>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" *ngIf="toAr && !toEn">
-            <li><a href="#" translate>Contact</a></li>
-            <li><a href="#" translate>About</a></li>
-            <li><a href="#" translate>News</a></li>
-            <li><a href="#" translate>Products</a></li>
-            <li class="active"><a href="#" translate>Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#" class=" navLink"  translate >Contact</a></li>
+            <li><a href="#" class=" navLink"  translate >About</a></li>
+            <li><a href="#" class=" navLink"  translate >News</a></li>
+            <li><a href="#" class=" navLink"  translate >Products</a></li>
+            <li class="active"><a href="#" class=" navLink"  translate>Home <span class="sr-only">(current)</span></a></li>
             <li>
-              <button class="btn btn-link" (click)="switchLanguageEn('en')">en</button>
-              <button class="btn btn-link" (click)="switchLanguageAr('ar')">ar</button>
+              <button class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="img-responsive flag"></button>
+              <button class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="img-responsive flag"></button>
             </li>
           </ul>
     </div><!-- /.navbar-collapse -->
