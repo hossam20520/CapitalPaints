@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   toEn:boolean=true;
   mobile:boolean;
   innerWidth:any;
+  auto="Automotive";
   constructor(private translate:TranslateService) {
     translate.setDefaultLang('en');
    }

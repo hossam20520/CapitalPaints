@@ -6,7 +6,9 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
+  title: string = 'My first AGM project';
+  lat: number = 29.961927;
+  lng: number = 31.311328;
   constructor(private translate:TranslateService) {
     translate.setDefaultLang('en');
    }

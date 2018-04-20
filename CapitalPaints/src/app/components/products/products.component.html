@@ -1,1 +1,53 @@
-
+<section class="container-fluid toolTip-sec text-center">
+    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+        placement="top" [routerLink]="['/products',auto]">
+    Automotive
+    </button>
+ 
+    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+       placement="right" [routerLink]="['/products',deco]">
+    Decorative
+    </button>
+ 
+    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+        placement="auto" [routerLink]="['/products',wood]">
+    Wood
+    </button>
+ 
+    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+        placement="left" [routerLink]="['/products',indust]">
+    Industrial
+    </button>
+</section>
+<!--............place router outlet here ............................-->
+<section class="containter-fluid">
+    <carousel>
+        <slide *ngFor="let image of images">
+            
+          <img src="../../../assets/images/productsImgs/{{image.image}}.jpg" alt="first slide" style="display: block; width: 100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </slide>
+      </carousel>
+</section>
+<!--............place router outlet here ............................-->
+<!--..................section four (NEWS)........-->
+<section class=" fifth-sec container-fluid text-center">
+    <div class="card">
+          <div class="card-body">
+            <span class="header-proChoice head">News</span>
+            <div class="row card-row">
+                <div class="col-md-6 card-col-img">
+                    <img class="card-img" src="../../../assets/images/vga.png" width="100%">
+                </div>
+                <div class="col-md-6 card-col-text">
+                    
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+          </div>
+    </div>
+</section>

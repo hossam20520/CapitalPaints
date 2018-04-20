@@ -10,7 +10,8 @@ import { CollapseModule } from 'ngx-bootstrap';
 import { CarouselModule } from 'ngx-bootstrap';
 import {RouterModule} from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
-
+import { TooltipModule } from 'ngx-bootstrap';
+import { AgmCoreModule } from '@agm/core';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -24,7 +25,10 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     HttpClientModule,
     CollapseModule,
-   
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyCfTuB2SDEMdQvMj5Ndt_Q5skeDfH2c9UI'
+    }),
+    TooltipModule.forRoot(),
     CarouselModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
@@ -35,7 +39,7 @@ export function createTranslateLoader(http: HttpClient) {
   }),
   RouterModule.forRoot([
     {path:'homepage', component:HomePageComponent},
-    {path:'products',component:ProductsComponent},
+    {path:'products/:type',component:ProductsComponent},
     {path:"",redirectTo:'homepage',pathMatch:'full'}
     
   ])
