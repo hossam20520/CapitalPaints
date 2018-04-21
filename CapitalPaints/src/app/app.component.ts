@@ -45,7 +45,8 @@ export class AppComponent implements OnInit {
         $('#nav-btn').removeClass('navbar-toggle');
         $('#nav-btn').addClass('navBtnStyle');
         $('#nav-header').addClass('navbar-header');
-       
+        $('.flag').removeClass('flag-img');
+        $('.flag').addClass('flagStyle');
       }
       
       if(scroll>3){
@@ -58,6 +59,8 @@ export class AppComponent implements OnInit {
         $('#nav-btn').removeClass('navBtnStyle');
         $('#nav-btn').addClass('navbar-toggle');
         $('#nav-header').removeClass('navbar-header');
+        $('.flag').removeClass('flagStyle');
+        $('.flag').addClass('flag-img');
       }
   });
    }

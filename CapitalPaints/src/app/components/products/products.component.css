@@ -1,11 +1,41 @@
 .toolTip-sec{
     margin-top: 12em;
+    margin-bottom: 5em;
 }
 .toolBtn{
     border-radius: 19px;
     border: 1px solid violet;
     box-shadow: 5px 5px 5px #bbb;
 }
+/*..........carousel styling.............*/
+.carousel-caption {
+      
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #7a51a1;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    position:inherit !important;
+}
+
+/*........call button..........*/
+.call{
+    margin-top:3em;
+}
+.callBtn{
+    border-radius: 18px;
+    border: 1px solid violet;
+    -webkit-box-shadow: 5px 5px 5px #bbb;
+    box-shadow: 5px 5px 5px #bbb;
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
  /*.fourth section first card (why us)..*/
  .header-proChoice{
 	font-size: 30px;

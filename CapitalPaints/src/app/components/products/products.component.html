@@ -1,38 +1,41 @@
 <section class="container-fluid toolTip-sec text-center">
     <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="top" [routerLink]="['/products',auto]">
+        placement="top" [routerLink]="['/products',auto]" routerLinkActive="active" (click)="toShowAuto()">
     Automotive
     </button>
  
     <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-       placement="right" [routerLink]="['/products',deco]">
+       placement="right" [routerLink]="['/products',deco]" routerLinkActive="active" (click)="toShowDeco()">
     Decorative
     </button>
  
     <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="auto" [routerLink]="['/products',wood]">
+        placement="auto" [routerLink]="['/products',wood]" routerLinkActive="active" (click)="toShowWood()">
     Wood
     </button>
  
     <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="left" [routerLink]="['/products',indust]">
+        placement="left" [routerLink]="['/products',indust]" routerLinkActive="active" (click)="toShowIndust()">
     Industrial
     </button>
 </section>
 <!--............place router outlet here ............................-->
-<section class="containter-fluid">
-    <carousel>
+<section class="container">
+    <carousel [showIndicators]="false">
         <slide *ngFor="let image of images">
             
-          <img src="../../../assets/images/productsImgs/{{image.image}}.jpg" alt="first slide" style="display: block; width: 100%;">
+          <img src="../../../assets/images/productsImgs/{{image.image}}.jpg" alt="first slide" style="display: block; width: 100%; height: 550px;">
           <div class="carousel-caption d-none d-md-block">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>{{image.header}}</h3>
+            <p>{{image.text}}</p>
           </div>
         </slide>
       </carousel>
 </section>
 <!--............place router outlet here ............................-->
+<div class="container text-center call">
+    <button class="btn btn-default btn-secondary mb-2 callBtn">Call Us</button>
+</div>
 <!--..................section four (NEWS)........-->
 <section class=" fifth-sec container-fluid text-center">
     <div class="card">

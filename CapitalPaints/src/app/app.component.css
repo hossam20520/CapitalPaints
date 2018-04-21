@@ -4,11 +4,16 @@
 	margin-top: -1em !important;
 	width:100px;
 	height:76px;
-	
+	transition-duration: 0.5s;
 }
-.flag{
+.flag-img{
 	width: 50px;
 	height: 50px;
+}
+.flagStyle{
+	width: 50px;
+	height: 50px;
+	margin-top:1em;
 }
 .navbar-right{
 	margin-right: 2em;
@@ -35,10 +40,19 @@
 .navStyle{
 	background-color: transparent;
 	border:transparent;
+	transition-duration: 1s;
+}
+.navStyle:hover{
+	background-color: #ffffff;
+	border-color: #fff; 
+   height: 7.9em;
+   box-shadow: 5px 5px 5px;
+   transition-duration: 1s;
 }
 .logoStyle{
 	height: 125px;
-    margin-top: -1em;
+	margin-top: -1em;
+	transition-duration: 2s;
 }
 .navlinkStyle{
 	line-height: 74px;
@@ -58,7 +72,7 @@
 	line-height: 24px;
 }
 .navStyle .navbar-nav>li>a {
-	color: #070d12; ;
+	color: #070d12; 
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 74px;
@@ -68,6 +82,7 @@
      border-color: #fff; 
 	height: 5em;
 	box-shadow: 5px 5px 5px;
+	transition-duration: 1s;
 }
  .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover {
     color: #555;
@@ -216,6 +231,12 @@ float:left;
 	}
 	.navbar-default .navbar-nav > li > a {
 		color: aliceblue;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 24px;
+	}
+	.navStyle .navbar-nav>li>a {
+		color: aliceblue; 
 		font-size: 15px;
 		font-weight: 600;
 		line-height: 24px;
