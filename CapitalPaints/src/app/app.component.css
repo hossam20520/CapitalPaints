@@ -40,7 +40,9 @@
     text-decoration: none;
     background-color: transparent;
 	border-bottom: 4px solid violet;
+	padding-bottom: 1.34em;
 }
+
 .navStyle{
 	background-color: transparent;
 	border:transparent;

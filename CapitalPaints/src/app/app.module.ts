@@ -13,6 +13,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { TooltipModule } from 'ngx-bootstrap';
 import { AgmCoreModule } from '@agm/core';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { RandDComponent } from './components/rand-d/rand-d.component';
+
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -21,7 +23,9 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     HomePageComponent,
     ProductsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    RandDComponent,
+    
   ],
   imports: [
     BrowserModule,
