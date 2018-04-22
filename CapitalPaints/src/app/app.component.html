@@ -19,14 +19,14 @@
           <li><a [routerLink]="['/products',auto]" routerLinkActive="active current" class="navLink"  translate>Products</a></li>
           <li><a href="#" class=" navLink"  translate>News</a></li>
           <li><a href="#" class=" navLink"  translate>About</a></li>
-          <li><a href="#" class=" navLink"  translate>Contact</a></li>
+          <li><a [routerLink]="['/contactUs']" routerLinkActive="active current" class=" navLink"  translate>Contact</a></li>
           <li>
             <button *ngIf="toAr && !toEn" class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="flagStyle img-responsive flag"></button>
             <button *ngIf="toEn && !toAr" class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="flagStyle img-responsive flag"></button>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" *ngIf="toAr && !toEn && !mobile">
-            <li><a href="#" class=" navLink"  translate >Contact</a></li>
+            <li><a [routerLink]="['/contactUs']" routerLinkActive="active current" class=" navLink"  translate >Contact</a></li>
             <li><a href="#" class=" navLink"  translate >About</a></li>
             <li><a href="#" class=" navLink"  translate >News</a></li>
             <li><a [routerLink]="['/products',auto]" routerLinkActive="active current" class=" navLink"  translate >Products</a></li>
@@ -41,7 +41,7 @@
             <li><a [routerLink]="['/products',auto]" routerLinkActive="active current" class="navLink"  translate>Products</a></li>
             <li><a href="#" class=" navLink"  translate>News</a></li>
             <li><a href="#" class=" navLink"  translate>About</a></li>
-            <li><a href="#" class=" navLink"  translate>Contact</a></li>
+            <li><a [routerLink]="['/contactUs']" routerLinkActive="active current" class=" navLink"  translate>Contact</a></li>
             <li>
               <button *ngIf="toAr && !toEn" class="btn btn-link" (click)="switchLanguageEn('en')"><img src="../assets/images/321269.png" class="flagStyle img-responsive flag"></button>
               <button *ngIf="toEn && !toAr" class="btn btn-link" (click)="switchLanguageAr('ar')"><img src="../assets/images/321226.png" class="flagStyle img-responsive flag"></button>

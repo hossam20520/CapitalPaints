@@ -42,6 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
   RouterModule.forRoot([
     {path:'homepage', component:HomePageComponent},
     {path:'products/:type',component:ProductsComponent},
+    {path:'contactUs',component:ContactUsComponent},
     {path:"",redirectTo:'homepage',pathMatch:'full'}
     
   ])
