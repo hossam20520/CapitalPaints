@@ -36,19 +36,23 @@
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-
+.nav>li>a:active, .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+	border-bottom: 4px solid violet;
+}
 .navStyle{
 	background-color: transparent;
 	border:transparent;
 	transition-duration: 1s;
 }
-.navStyle:hover{
+/*.navStyle:hover{
 	background-color: #ffffff;
 	border-color: #fff; 
    height: 7.9em;
    box-shadow: 5px 5px 5px;
    transition-duration: 1s;
-}
+}*/
 .logoStyle{
 	height: 125px;
 	margin-top: -1em;
@@ -76,6 +80,7 @@
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 74px;
+	padding-bottom: 0px;
 }
 .navbar-default {
     background-color: #ffffff;
@@ -84,16 +89,8 @@
 	box-shadow: 5px 5px 5px;
 	transition-duration: 1s;
 }
- .navbar-nav>.active>a,  .navbar-nav>.active>a:focus,  .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #ba359396;
-	border-radius: 15px;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: #b53995b8;
-    border-radius: 15px;
-}
+
+
  /*....footer.....*/
  .social-icon{
 	width: 40px;
