@@ -12,6 +12,10 @@ export class ProductsComponent implements OnInit {
   deco="Decorative";
   wood="Wood";
   indust="Industrial";
+  isAuto:boolean=true;
+  isDeco=false;
+  isWood=false;
+  isIndust=false;
   type:string="automotive";
   sub:any;
   images:ImageShow[];
@@ -233,19 +237,32 @@ export class ProductsComponent implements OnInit {
    });
    if (this.type==this.auto){
      this.images=this.autoImgs.slice();
+     this.isAuto=true;
+     this.isDeco=false;
+     this.isIndust=false;
+     this.isWood=false;
      
     }
     else if (this.type==this.deco){
       this.images=this.decoImgs.slice();
-      
+      this.isAuto=false;
+     this.isDeco=true;
+     this.isIndust=false;
+     this.isWood=false;
      }
      else if (this.type==this.wood){
       this.images=this.woodImgs.slice();
-      
+      this.isAuto=false;
+     this.isDeco=false;
+     this.isIndust=false;
+     this.isWood=true;
      }
      else if (this.type==this.indust){
       this.images=this.industImgs.slice();
-      
+      this.isAuto=false;
+     this.isDeco=false;
+     this.isIndust=true;
+     this.isWood=false;
      }
     
   }
@@ -253,21 +270,37 @@ export class ProductsComponent implements OnInit {
     
     this.images.length=0;
      this.images=this.autoImgs.slice();
+     this.isAuto=true;
+     this.isDeco=false;
+     this.isIndust=false;
+     this.isWood=false;
    }
   toShowDeco(){
     
    this.images.length=0;
     this.images=this.decoImgs.slice();
+    this.isAuto=false;
+     this.isDeco=true;
+     this.isIndust=false;
+     this.isWood=false;
   }
   toShowWood(){
     
     this.images.length=0;
     this.images=this.woodImgs.slice();
+    this.isAuto=false;
+     this.isDeco=false;
+     this.isIndust=false;
+     this.isWood=true;
   }
   toShowIndust(){
-    debugger
+    
     this.images.length=0;
     this.images=this.industImgs.slice();
+    this.isAuto=false;
+     this.isDeco=false;
+     this.isIndust=true;
+     this.isWood=false;
   }
 
 }

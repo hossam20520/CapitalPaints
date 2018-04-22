@@ -1,23 +1,50 @@
 <section class="container-fluid toolTip-sec text-center">
-    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="top" [routerLink]="['/products',auto]" routerLinkActive="active" (click)="toShowAuto()">
-    Automotive
-    </button>
- 
-    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-       placement="right" [routerLink]="['/products',deco]" routerLinkActive="active" (click)="toShowDeco()">
-    Decorative
-    </button>
- 
-    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="auto" [routerLink]="['/products',wood]" routerLinkActive="active" (click)="toShowWood()">
-    Wood
-    </button>
- 
-    <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
-        placement="left" [routerLink]="['/products',indust]" routerLinkActive="active" (click)="toShowIndust()">
-    Industrial
-    </button>
+    <div class="row btn-row-nav">
+        <div class="col-md-3 col-xs-3 col-sm-3">
+            <div class="row">
+                <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+                placement="top" [routerLink]="['/products',auto]" routerLinkActive="active" (click)="toShowAuto()">
+                Automotive
+                </button>
+            </div>
+            <div *ngIf="isAuto && !isDeco && !isIndust && !isWood" class="row-arr">
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3">
+            <div class="row">
+                <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+                placement="right" [routerLink]="['/products',deco]" routerLinkActive="active" (click)="toShowDeco()">
+                Decorative
+                </button>
+            </div>
+            <div *ngIf="!isAuto && isDeco && !isIndust && !isWood" class="row-arr">
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3">
+            <div class="row">
+                <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+                placement="auto" [routerLink]="['/products',wood]" routerLinkActive="active" (click)="toShowWood()">
+                Wood
+                </button>
+            </div>
+            <div *ngIf="!isAuto && !isDeco && !isIndust && isWood" class="row-arr">
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3">
+            <div class="row">
+                <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
+                placement="left" [routerLink]="['/products',indust]" routerLinkActive="active" (click)="toShowIndust()">
+                Industrial
+                </button>
+            </div>
+            <div *ngIf="!isAuto && !isDeco && isIndust && !isWood" class="row-arr">
+                <div class="arrow"></div>
+            </div>
+        </div>
+</div>
 </section>
 <!--............place router outlet here ............................-->
 <section class="container">

@@ -4,8 +4,79 @@
 }
 .toolBtn{
     border-radius: 19px;
-    border: 1px solid violet;
-    box-shadow: 5px 5px 5px #bbb;
+    border: 2px solid black;
+   box-shadow: 5px 5px 5px #bbb;
+    padding: 30px 40px 30px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+    
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #d51a8b;
+    border: 2px solid violet;
+}
+.btn-default {
+    color: #5b5c5d;
+    background-color: #fff;
+  
+}
+.btn-row-nav{
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+.row-arr{
+    margin-top: 3em;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    
+    background-color:transparent !important;
+    
+}
+/*...................arrow.................*/
+.arrow,
+.arrow:before{
+  position: absolute;
+  left: 50%
+}
+.arrow{
+    position: relative;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #a679d2 solid;
+  border-bottom: 2px #a679d2 solid;
+}
+  
+.arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #a679d2 solid;
+  border-bottom: 1px #a679d2 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+  
+@keyframes arrow{
+  0%{
+      opacity: 1;
+    }
+    
+  100%{
+      opacity: 0;
+    transform: translate(-10px, -10px)
+}
+    
 }
 /*..........carousel styling.............*/
 .carousel-caption {
