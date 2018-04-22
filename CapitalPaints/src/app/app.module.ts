@@ -12,6 +12,7 @@ import {RouterModule} from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
 import { TooltipModule } from 'ngx-bootstrap';
 import { AgmCoreModule } from '@agm/core';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -19,7 +20,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     HomePageComponent,
-    ProductsComponent
+    ProductsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
