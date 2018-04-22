@@ -47,6 +47,7 @@ export function createTranslateLoader(http: HttpClient) {
     {path:'homepage', component:HomePageComponent},
     {path:'products/:type',component:ProductsComponent},
     {path:'contactUs',component:ContactUsComponent},
+    {path:'RandD',component:RandDComponent},
     {path:"",redirectTo:'homepage',pathMatch:'full'}
     
   ])
