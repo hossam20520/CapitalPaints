@@ -72,10 +72,12 @@ export class AppComponent implements OnInit {
   toggleBtnAr(){
     this.toAr=true;
     this.toEn=false;
+    $('#un-list').css({"text-align": "right", "direction":"rtl"})
   }
   toggleBtnEn(){
     this.toAr=false;
     this.toEn=true;
+    $('#un-list').css({"text-align": "left"})
   }
   switchLanguageEn(language:string){
     this.translate.use(language);

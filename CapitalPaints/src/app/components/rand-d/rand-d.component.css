@@ -1,0 +1,26 @@
+.first-section{
+    margin-top: 12em;
+}
+.first-img{
+    margin-top: 0em;
+}
+.header-research{
+    color: #b73894;
+    font-weight: 600;
+    font-size: 20px;
+}
+.first-row{
+    margin-top: 5em;
+}
+hr{
+    
+    border-top: 1px solid #d21b8c9c;
+    box-shadow: 0px 0px 5px black;
+    width: 70%;
+    
+}
+.list{
+    text-align: left;
+    list-style-position: inside;
+    list-style: black;
+}
