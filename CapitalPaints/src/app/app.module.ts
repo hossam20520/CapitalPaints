@@ -14,6 +14,7 @@ import { TooltipModule } from 'ngx-bootstrap';
 import { AgmCoreModule } from '@agm/core';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { RandDComponent } from './components/rand-d/rand-d.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,6 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
     ProductsComponent,
     ContactUsComponent,
     RandDComponent,
+    AboutUsComponent,
     
   ],
   imports: [
