@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   auto="Automotive";
   constructor(private translate:TranslateService) {
     translate.setDefaultLang('en');
+    translate.use('en');
    }
 
    @HostListener('window:resize', ['$event'])
@@ -72,12 +73,14 @@ export class AppComponent implements OnInit {
   toggleBtnAr(){
     this.toAr=true;
     this.toEn=false;
-    $('#un-list').css({"text-align": "right", "direction":"rtl"})
+    $('#un-list,#ul-list-two,#address-col').css({"text-align": "right", "direction":"rtl"});
+    
   }
   toggleBtnEn(){
     this.toAr=false;
     this.toEn=true;
-    $('#un-list').css({"text-align": "left"})
+    $('#un-list ,#ul-list-two,#address-col').css({"text-align": "left", "direction":"ltr"});
+   
   }
   switchLanguageEn(language:string){
     this.translate.use(language);

@@ -24,3 +24,9 @@ hr{
     list-style-position: inside;
     list-style: black;
 }
+.container-fluid .img-section {
+    padding-right: 0px !important; 
+    padding-left: 0px !important ; 
+    margin-right: auto;
+    margin-left: auto;
+}

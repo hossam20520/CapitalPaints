@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-rand-d',
@@ -9,8 +9,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class RandDComponent implements OnInit {
 
   constructor(private translate:TranslateService) { }
-
+  
   ngOnInit() {
   }
+
 
 }
