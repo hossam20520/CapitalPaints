@@ -5,7 +5,9 @@
                 <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
                 placement="top" [routerLink]="['/products',auto]" routerLinkActive="active" (click)="toShowAuto()">
                 Automotive
+                <div class="arrowTop"></div>
                 </button>
+                
             </div>
             <div *ngIf="isAuto && !isDeco && !isIndust && !isWood" class="row-arr">
                 <div class="arrow"></div>
@@ -16,7 +18,9 @@
                 <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
                 placement="right" [routerLink]="['/products',deco]" routerLinkActive="active" (click)="toShowDeco()">
                 Decorative
+                <div class="arrowTop"></div>
                 </button>
+                
             </div>
             <div *ngIf="!isAuto && isDeco && !isIndust && !isWood" class="row-arr">
                 <div class="arrow"></div>
@@ -27,7 +31,9 @@
                 <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
                 placement="auto" [routerLink]="['/products',wood]" routerLinkActive="active" (click)="toShowWood()">
                 Wood
+                <div class="arrowTop"></div>
                 </button>
+                
             </div>
             <div *ngIf="!isAuto && !isDeco && !isIndust && isWood" class="row-arr">
                 <div class="arrow"></div>
@@ -38,7 +44,9 @@
                 <button type="button" class="btn btn-default btn-secondary mb-2 toolBtn"
                 placement="left" [routerLink]="['/products',indust]" routerLinkActive="active" (click)="toShowIndust()">
                 Industrial
+                <div class="arrowTop"></div>
                 </button>
+                
             </div>
             <div *ngIf="!isAuto && !isDeco && isIndust && !isWood" class="row-arr">
                 <div class="arrow"></div>

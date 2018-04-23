@@ -6,7 +6,7 @@
     
     border: 2px solid black;
    box-shadow: 5px 5px 5px #bbb;
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px 48px 40px;
     font-size: 15px;
     font-weight: 600;
     transition: 1s;
@@ -19,7 +19,12 @@
 .btn-default {
     color: #5b5c5d;
     background-color: #fff;
-  
+}
+.btn-default.toolBtn:hover{
+    color: #f37734;
+}
+.btn-default.toolBtn:hover> .arrowTop:before{
+    display: inline;
 }
 .btn-row-nav{
     margin-left: 10% !important;
@@ -39,6 +44,12 @@
   position: absolute;
   left: 50%
 }
+.arrowTop,
+.arrowTop:before{
+  position: absolute;
+  left: 50%;
+  
+}
 .arrow{
     position: relative;
   width: 40px;
@@ -51,21 +62,48 @@
   border-right: 2px #a679d2 solid;
   border-bottom: 2px #a679d2 solid;
 }
+.arrowTop{
+    position: relative;
+  height: 0;
+  width: 0;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #a679d2 solid;
+  border-bottom: transparent;
+}
   
-.arrow:before{
+.arrowTop:before{
   content: '';
   width: 20px;
   height: 20px;
   top: 50%;
-  margin: -10px 0 0 -10px;
+  margin: 40px 0 0 68px;
   border-left: none;
   border-top: none;
   border-right: 1px #a679d2 solid;
   border-bottom: 1px #a679d2 solid;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: arrow;
+  display: none;
 }
+.arrow:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #a679d2 solid;
+    border-bottom: 1px #a679d2 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
   
 @keyframes arrow{
   0%{
